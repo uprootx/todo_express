@@ -29,16 +29,6 @@ app.use(bodyParser.json());
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
 
-
-// app.listen(process.env.PORT, () => {
-//   console.log(
-//     `Express Server started on Port ${app.get(
-//       'port'
-//     )} | Environment : ${app.get('env')}`
-//   );
-// });
-
-
 function success(res, payload) {
   return res.status(200).json(payload)
 };

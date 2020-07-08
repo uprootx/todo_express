@@ -11,6 +11,8 @@
     "react-dom": "^16.13.1",
     "react-scripts": "3.4.1"
   },
+  "homepage": "./",
+  "proxy": "http://localhost:9000",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",

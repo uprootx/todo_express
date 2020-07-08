@@ -68,7 +68,7 @@ function App() {
                 onClick={e => updateTodo(e, _id)}
                 className={completed ? 'completed' : ''}
               >
-              {task} <span onClick={e => deleteTodo(e, _id)}>FUCK</span>
+              {task} <span onClick={e => deleteTodo(e, _id)}></span>
               </li>
             ))}
           </ul>

@@ -1,6 +1,11 @@
 # todo_express
 
 
+To Run:
+
+`docker-compose up`
+
+
 Slowly (ever so slowly) teaching myself real programming.
 
 This is a project to learn the MERN stack: a Todo app leveraging a simple API for functionality, and MongoDB for peristance.

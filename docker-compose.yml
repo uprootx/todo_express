@@ -1,7 +1,21 @@
 version: '3'
 services:
-  database:
-    image: mongo
-    container_name: mongodb
+  client:
+    container_name: client
+    build:
+      context: .
+      dockerfile: client.Dockerfile
+    ports: 
+      - 3000:80
+  api:
+    container_name: api
+    build:
+      context: .
+      dockerfile: api.Dockerfile
     ports:
-      - 27017:27017
+      - 9000:9000
+  database:
+    container_name: mongo
+    build:
+      context: .
+      dockerfile: mongo.Dockerfile
